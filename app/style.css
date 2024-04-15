@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+.head-1 {
+  font-size: 72px !important;
+  font-weight: 700 !important;
+}
+h1 {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+}
+h2 {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+}
+h3 {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+}
+h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+.link {
+  font-size: 20px !important;
+}
+p {
+  font-size: 18px !important;
+}
+.small-para {
+  font-size: 16px !important;
+}
+.manrope {
+  font-family: "Manrope", sans-serif !important;
+}
+/* Navbar */
+.app-btn {
+  background-color: #9f238b;
+  box-shadow: 4px 4px 4px 2px #00000040;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 9px 16px 9px 16px;
+  color: #fff;
+  border-radius: 4px;
+}
