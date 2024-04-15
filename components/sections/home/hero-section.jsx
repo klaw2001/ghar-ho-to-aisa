@@ -1,22 +1,21 @@
 import React from "react";
-import Image from "next/image";
+
 import hero from "@/assets/images/hero.png";
 import { counterJson } from "@/utils/counterJson";
-
 const HeroSection = () => {
   return (
     <section className="hero-wrapper h-screen">
       <div className="">
-        <div className="flex flex-col md:flex-row items-center gap-6">
-          <div className="hero-img w-full md:w-3/4">
-            <Image src={hero} style={{ maxWidth: "-webkit-fill-available"}}/>
-          </div>
-          <div className="hero-text px-6">
-            <h1 className="leading-20">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="hero-img w-full md:w-3/4 h-full">
+           <video src="/videos/hero-video.mp4" className="w-full h-full" autoPlay loop muted></video>
+           </div>
+          <div className="hero-text px-6 pt-16 md:w-3/12 md:self-end">
+            <h2 className="leading-20">
               Our Journey Towards{" "}
               <span className="text-purple">Excellence!</span>
-            </h1>
-            <p className="manrope">
+            </h2>
+            <p className="manrope small-para">
               Welcome to our real estate website. We specialize in land
               development, residential spaces, and commercial premises. Our team
               of experts is dedicated to helping you find the perfect property
