@@ -49,3 +49,33 @@ p {
   color: #fff;
   border-radius: 4px;
 }
+.text-purple{
+    color: #9f238b;
+}
+
+
+
+
+/* Home Hero */
+.width-semi-half{
+    width: 75%;
+}
+.leading-20{
+    line-height: 4.66rem;
+}
+
+@media screen and (max-width:640px) {
+    .nav-links{
+
+        background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .hero-img{
+        max-width: 100%;
+    }
+    
+}
