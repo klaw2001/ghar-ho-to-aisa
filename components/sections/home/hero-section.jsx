@@ -4,7 +4,7 @@ import hero from "@/assets/images/hero.png";
 import { counterJson } from "@/utils/counterJson";
 const HeroSection = () => {
   return (
-    <section className="hero-wrapper h-screen">
+    <section className="hero-wrapper md:h-screen">
       <div className="">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="hero-img w-full md:w-3/4 h-full">

@@ -14,7 +14,7 @@ const OurProjects = () => {
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             {properties.map((elem, ind) => (
               <div
-                className="property-box flex text-left gap-1 items-center"
+                className="property-box flex text-left gap-1 items-center flex-col md:flex-row"
                 key={ind}
               >
                 <div className="relative w-full h-full">
