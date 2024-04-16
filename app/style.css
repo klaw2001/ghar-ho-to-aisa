@@ -27,6 +27,9 @@ h4 {
   font-size: 24px !important;
   font-weight: 700 !important;
 }
+h5 {
+  font-size: 20px !important;
+}
 .link {
   font-size: 20px !important;
 }
@@ -52,6 +55,12 @@ p {
 .text-purple{
     color: #9f238b;
 }
+.text-gold{
+  color: #C69E58;
+}
+.bg-gold{
+  background-color: #C69E58;
+}
 
 
 
@@ -69,6 +78,9 @@ p {
   height: auto !important;
 } */
 
+/* .property-box{
+  box-shadow: 0px 4px 4px 0px #00000040;
+} */
 @media screen and (max-width:640px) {
     .nav-links{
 

@@ -21,11 +21,11 @@ const HeroSection = () => {
               of experts is dedicated to helping you find the perfect property
               to meet your needs.
             </p>
-            <div className="counter-wrapper grid grid-cols-2 gap-2 mx-4 mt-3">
+            <div className="counter-wrapper grid grid-cols-2 gap-2  mt-3">
               {counterJson.map((elem, ind) => (
                 <div className="counter-box " key={ind}>
-                  <h2 className="text-purple manrope">{elem.number}</h2>
-                  <h3 className="manrope">{elem.text}</h3>
+                  <h3 className="text-purple manrope">{elem.number}</h3>
+                  <h4 className="manrope">{elem.text}</h4>
                 </div>
               ))}
             </div>
