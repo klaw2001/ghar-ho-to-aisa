@@ -8,9 +8,9 @@ const Partners = () => {
       <div className="container">
         <div className="partners-wrap text-center">
           <h2>Partners</h2>
-          <div className="flex flex-wrap w-full items-center justify-center gap-6 mt-8">
+          <div className="grid md:grid-cols-6 grid-cols-3 w-full items-center justify-center gap-6 mt-8">
             {dynamicBrands.map((elem, ind) => (
-              <div style={{width:"200px"}} className="text-center m-auto">
+              <div style={{width:"100px"}} className="text-center m-auto">
                 <Image
                   src={elem.img}
                   key={ind}
