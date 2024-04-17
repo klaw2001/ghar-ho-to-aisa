@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const OurProjects = () => {
   return (
-    <section className="py-6">
+    <section className="py-16">
       <div className="container">
         <div className="projects-wrapper text-center">
           <h2>Browse Properties</h2>

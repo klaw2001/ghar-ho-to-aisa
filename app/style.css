@@ -100,6 +100,7 @@ p {
   height: 1px;
   border: 1px solid #000;
 }
+
 @media screen and (max-width: 640px) {
   .nav-links {
     background: rgba(255, 255, 255, 0.25);
