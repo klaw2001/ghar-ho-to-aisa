@@ -28,7 +28,7 @@ export default function TestimonialWrapper() {
         }}
         loop={true}
         modules={[Autoplay, Pagination]}
-        className="mySwiper bg-fixed"
+        className="mySwiper bg-fixed "
       >
         <SwiperSlide>
           <CardOne />
