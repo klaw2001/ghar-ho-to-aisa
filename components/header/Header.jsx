@@ -19,7 +19,7 @@ const Header = () => {
           <nav className="flex justify-between items-center relative z-50">
             <div className="logo">
               <Link href="/">
-                <Image src={logo} alt="Logo" className="max-w-max" />
+                <Image src={logo} alt="Logo" className="max-w-max md:w-3/5" />
               </Link>
             </div>
             <div className="lg:hidden">

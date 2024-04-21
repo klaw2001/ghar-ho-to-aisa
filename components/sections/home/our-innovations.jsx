@@ -45,7 +45,7 @@ const Innovations = () => {
           </div>
           <div className="inn-text md:p-8">
             <h2>Our Innovations</h2>
-            <p className="my-6">
+            <p className="my-6 manrope">
               We prioritize developing innovative solutions that directly
               address their needs. Our dedicated team is driven by a
               customer-centric approach, ensuring every product and service we

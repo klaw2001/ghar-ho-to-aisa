@@ -55,6 +55,9 @@ p {
 .text-purple {
   color: #9f238b;
 }
+.bg-purple {
+  background: #9f238b;
+}
 .text-gold {
   color: #c69e58;
 }
@@ -102,6 +105,30 @@ p {
 }
 
 @media screen and (max-width: 640px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  h2 {
+    font-size: 36px !important;
+  }
+  h3 {
+    font-size: 24px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  .link {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+  .small-para {
+    font-size: 14px !important;
+  }
   .nav-links {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -112,5 +139,8 @@ p {
   }
   .hero-img {
     max-width: 100%;
+  }
+  .leading-20 {
+    line-height: 3rem;
   }
 }

@@ -10,7 +10,7 @@ const HeroSection = () => {
           <div className="hero-img w-full md:w-3/4 h-full">
            <video src="/videos/hero-video.mp4" className="w-full h-full" autoPlay loop muted></video>
            </div>
-          <div className="hero-text px-6 pt-16 md:w-3/12 md:self-end">
+          <div className="hero-text md:px-6 md:pt-16 p-4 md:w-3/12 md:self-end">
             <h2 className="leading-20">
               Our Journey Towards{" "}
               <span className="text-purple">Excellence!</span>
