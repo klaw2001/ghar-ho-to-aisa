@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination , Navigation } from "swiper/modules";
 import Image from "next/image";
 
 export default function BannerCarousel() {
@@ -32,7 +32,8 @@ export default function BannerCarousel() {
           clickable: true,
         }}
         loop={true}
-        modules={[Autoplay, Pagination]}
+        navigation={true}
+        modules={[Autoplay, Pagination , Navigation]}
         className="mySwiper bg-fixed"
       >
         {bannerImages.map((elem, ind) => (

@@ -1,19 +1,34 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@/assets/images/logo.png";
 import { CiMenuBurger } from "react-icons/ci";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const heroSectionHeight = window.innerHeight;
+      if (scrollPosition > heroSectionHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <header className="fixed z-50 top-0 left-0 right-0 ">
+    <header className={`fixed z-50 top-0 left-0 right-0 ${isScrolled ? 'bg-white' : ''}`}>
       <div className="navbar-wrapper py-5">
         <div className="container mx-auto">
           <nav className="flex justify-between items-center relative z-50">
@@ -32,7 +47,7 @@ const Header = () => {
             </div>
             <div
               className={`nav-links md:static absolute top-0 text-center md:pt-0 pt-16 ease-in-out duration-300 -z-50 ${
-                isOpen ? "right-0 left-0" : "left-[auto] right-[-300px]"
+                isOpen ? "right-0 left-0 bg-white" : "left-[auto] right-[-300px]"
               }`}
             >
               <Link

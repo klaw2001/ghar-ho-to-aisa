@@ -49,7 +49,7 @@ const OurProjects = () => {
                     </span>
                     <Link
                       href=""
-                      className="manrope text-xs font-semibold underline underline-offset-2"
+                      className="manrope text-xs font-bold underline underline-offset-2"
                     >
                       Learn More &gt;
                     </Link>

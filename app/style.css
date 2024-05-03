@@ -129,6 +129,9 @@ p {
   .small-para {
     font-size: 14px !important;
   }
+  nav{
+    padding: 7px 20px 0px;
+  }
   .nav-links {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -142,5 +145,11 @@ p {
   }
   .leading-20 {
     line-height: 3rem;
+  }
+  .exp-heading::before , .exp-heading::after{
+    display: none;
+  }
+  .district-swiper{
+    width: 150px !important;
   }
 }
