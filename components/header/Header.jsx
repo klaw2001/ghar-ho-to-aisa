@@ -46,43 +46,44 @@ const Header = () => {
               </button>
             </div>
             <div
-              className={`nav-links md:static absolute top-0 text-center md:pt-0 pt-16 ease-in-out duration-300 -z-50 ${
+              className={`nav-links md:static absolute top-0 text-center md:pt-0 pt-20 ease-in-out duration-300 -z-50 ${
                 isOpen ? "right-0 left-0 bg-white" : "left-[auto] right-[-300px]"
               }`}
             >
               <Link
                 href="/"
-                className="manrope font-semibold text-lg px-4 py-2 block lg:inline-block"
+                className="manrope font-semibold text-lg px-4 py-5 py-md-2 block lg:inline-block nav-item relative"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="manrope font-semibold text-lg px-4 py-2 block lg:inline-block"
+                className="manrope font-semibold text-lg px-4 py-5 py-md-2 block lg:inline-block nav-item relative"
               >
                 About Us
               </Link>
               <Link
                 href="/investors"
-                className="manrope font-semibold text-lg px-4 py-2 block lg:inline-block"
+                className="manrope font-semibold text-lg px-4 py-5 py-md-2 block lg:inline-block nav-item relative"
               >
                 Investors
               </Link>
               <Link
                 href="/innovations"
-                className="manrope font-semibold text-lg px-4 py-2 block lg:inline-block"
+                className="manrope font-semibold text-lg px-4 py-5 py-md-2 block lg:inline-block nav-item relative"
               >
                 Innovations
               </Link>
               <Link
                 href="/projects"
-                className="manrope font-semibold text-lg px-4 py-2 block lg:inline-block"
+                className="manrope font-semibold text-lg px-4 py-5 py-md-2 block lg:inline-block nav-item relative"
               >
                 Projects
               </Link>
               <Link
                 href="/blogs"
-                className="manrope font-semibold text-lg px-4 py-2 block lg:inline-block"
+                className="manrope font-semibold text-lg px-4 py-5 py-md-2 block lg:inline-block nav-item relative last-link"
+
               >
                 Blogs
               </Link>

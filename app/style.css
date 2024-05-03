@@ -130,7 +130,7 @@ p {
     font-size: 14px !important;
   }
   nav{
-    padding: 7px 20px 0px;
+    padding: 20px 20px 0px;
   }
   .nav-links {
     background: rgba(255, 255, 255, 0.25);
@@ -139,7 +139,25 @@ p {
     -webkit-backdrop-filter: blur(2px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: left !important;
   }
+  .nav-item::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    border: 1px solid rgba(222 ,222, 222);
+    bottom: 0;
+    left: 15px;
+    right: 0px;
+  }
+  .last-link::after {
+    content: none;
+  }
+  .last-link{
+    padding-bottom: 40px !important;
+  }
+  
   .hero-img {
     max-width: 100%;
   }
