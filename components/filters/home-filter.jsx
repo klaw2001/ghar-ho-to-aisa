@@ -140,7 +140,7 @@ export default function HomeFilters() {
         setSelected={setSelectedLocation}
         classNames={classNames}
       />
-      <button className="app-btn manrope">Search Properties</button>
+      <button className="app-btn manrope my-5 my-md-0">Search Properties</button>
     </div>
   );
 }

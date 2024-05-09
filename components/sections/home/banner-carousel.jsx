@@ -7,41 +7,37 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination , Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 export default function BannerCarousel() {
-  const bannerImages = [
-    "banner1",
-    "banner2",
-    "banner3",
-    "banner4",
-    "banner5",
-  ];
+  const bannerImages = ["banner1", "banner2", "banner3", "banner4", "banner5"];
 
   return (
     <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        loop={true}
-        navigation={true}
-        modules={[Autoplay, Pagination , Navigation]}
-        className="mySwiper bg-fixed"
-      >
-        {bannerImages.map((elem, ind) => (
-          <SwiperSlide key={ind}>
-            <Image src={`/images/${elem}.jpg`} width={1520} height={600}/>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <section className="relative">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {bannerImages.map((elem, ind) => (
+            <SwiperSlide key={ind}>
+              <Image src={`/images/${elem}.jpg`} width={1520} height={600} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
     </>
   );
 }
