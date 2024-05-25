@@ -108,7 +108,7 @@ export default function HomeFilters() {
   const [selectedLocation, setSelectedLocation] = useState(location[0]);
 
   return (
-    <div className="grid md:grid-cols-5 grid-cols-1 border border-2 p-4 gap-2 my-6">
+    <div className="grid md:grid-cols-5 grid-cols-1 border border-2 p-4 gap-2 my-6 items-center">
       {/* Render Select Box for Property Type */}
       <SelectBox
         options={propertyType}

@@ -7,7 +7,7 @@ const SelectBox = ({ options, selected, setSelected, classNames }) => {
     <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
         <div className="relative my-2">
-          <Listbox.Button className="list-box-btn relative w-full cursor-default bg-white py-3 pl-3 pr-10 text-left text-gray-900   focus:outline-none focus:ring-2 focus:ring-black sm:text-sm sm:leading-6 md:border-r-2 border-b-2">
+          <Listbox.Button className="list-box-btn relative w-full cursor-default bg-white py-3 pl-3 pr-10 text-left text-gray-900   focus:outline-none focus:ring-2 focus:ring-black sm:text-sm sm:leading-6 md:border-r-2 md:border-b-0 border-b-2">
             <span className="flex items-center">
               <h5 className="ml-3 block truncate manrope">{selected.title}</h5>
             </span>

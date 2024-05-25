@@ -7,11 +7,11 @@ const HeroSection = () => {
     <section className="hero-wrapper md:h-screen">
       <div className="">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="hero-img w-full md:w-3/4 h-full">
-           <video src="/videos/hero-video.mp4" className="w-full h-full" autoPlay loop muted></video>
+          <div className="hero-img h-full">
+           <video src="/videos/hero-video.mp4" className=" h-full" autoPlay loop muted></video>
            </div>
           <div className="hero-text md:px-6 md:pt-16 p-4 md:w-3/12 md:self-end">
-            <h2 className="leading-20">
+            <h2 className="">
               Our Journey Towards{" "}
               <span className="text-purple">Excellence!</span>
             </h2>
