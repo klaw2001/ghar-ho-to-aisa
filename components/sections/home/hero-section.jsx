@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="hero-img h-full">
-           <video src="/videos/hero-video.mp4" className="object-cover w-[930px] h-[700px]" autoPlay loop muted></video>
+           <video src="/videos/hero-video.mp4" className="object-cover w-[930px] h-[616px] md:h-[700px]" autoPlay loop muted></video>
            </div>
           <div className="hero-text md:px-6 md:pt-19 p-4 md:w-3/12 md:self-end">
             <h2 className="">
