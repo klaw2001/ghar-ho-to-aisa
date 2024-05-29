@@ -1,8 +1,9 @@
+import CircularText from "@/components/global/circular-text";
 import React from "react";
 
 const ExpertiseSection = () => {
   return (
-    <section className="py-16 bg-lavendar">
+    <section className="pt-16 pb-44 bg-lavendar relative">
       <div className="container">
         <div className="expertise-wrap grid grid-cols-1 md:grid-cols-2 items-center pb-14">
           <h2 className="mb-4 md:mb-0">Expertise</h2>
@@ -21,6 +22,7 @@ const ExpertiseSection = () => {
           loop
           className="m-auto w-full"
         ></video>
+        <CircularText/>
       </div>
     </section>
   );

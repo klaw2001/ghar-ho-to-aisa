@@ -15,7 +15,7 @@ export default function BannerCarousel() {
 
   return (
     <>
-      <section className="relative">
+      <section className="relative py-40">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
