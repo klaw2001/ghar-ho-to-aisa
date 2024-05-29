@@ -33,7 +33,7 @@ export default function BannerCarousel() {
         >
           {bannerImages.map((elem, ind) => (
             <SwiperSlide key={ind}>
-              <Image src={`/images/${elem}.jpg`} width={1520} height={600} />
+              <Image src={`/images/${elem}.jpg`} width={1250} height={600} className="mx-auto pb-16"/>
             </SwiperSlide>
           ))}
         </Swiper>

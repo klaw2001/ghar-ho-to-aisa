@@ -1,6 +1,7 @@
 import React from "react";
 import BreadcrumbBox from "./breadcrumb-box";
 import Image from "next/image";
+import CircularText from "./circular-text";
 
 const HeroGlobal = ({
   myclass,
@@ -12,7 +13,7 @@ const HeroGlobal = ({
 }) => {
   return (
     <>
-      <section>
+      <section className="relative">
         <div className="container">
           <div className={myclass}>
             <BreadcrumbBox page={"About"} alignment={alignBreadcrumb} />
@@ -30,6 +31,7 @@ const HeroGlobal = ({
             />
           )}
         </div>
+        <CircularText />
       </section>
     </>
   );

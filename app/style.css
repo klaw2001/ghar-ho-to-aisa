@@ -106,11 +106,15 @@ p {
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: auto !important;
-  right: 80px !important;
+  right: 180px !important;
   /* top: 105%; */
   /* bottom: 20px; */
   top: 95% !important;
   z-index: 99999999;
+}
+.swiper-button-next {
+  right: 130px !important;
+  left: auto;
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {

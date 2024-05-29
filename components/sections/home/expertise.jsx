@@ -3,7 +3,7 @@ import React from "react";
 
 const ExpertiseSection = () => {
   return (
-    <section className="pt-16 pb-44 bg-lavendar relative">
+    <section className="pt-16 md:pb-44 bg-lavendar relative">
       <div className="container">
         <div className="expertise-wrap grid grid-cols-1 md:grid-cols-2 items-center pb-14">
           <h2 className="mb-4 md:mb-0">Expertise</h2>
