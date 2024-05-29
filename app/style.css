@@ -112,6 +112,7 @@ p {
   top: 95% !important;
   z-index: 99999999;
 }
+
 .swiper-button-next {
   right: 130px !important;
   left: auto;
@@ -225,4 +226,7 @@ p {
   .district-swiper {
     width: 150px !important;
   }
+  .swiper-button-prev, .swiper-button-next{
+  display: none !important;
+}
 }

@@ -41,7 +41,7 @@ const Innovations = () => {
       <div className="container">
         <div className="innovations-wrapper grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="inn-image">
-            <Image src="/images/innovations.png" width={711} height={800} className="h-[900px]" />
+            <Image src="/images/innovations.png" width={711} height={800} className="md:h-[900px]" />
           </div>
           <div className="inn-text md:p-8">
             <h2>Our Innovations</h2>
