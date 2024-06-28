@@ -52,6 +52,38 @@ p {
   color: #fff;
   border-radius: 4px;
 }
+.white-btn {
+  border: 2px solid;
+  padding: 7px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero-linear{
+  background: linear-gradient(89.82deg, #9F238B 4.08%, #FFFFFF 73.85%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.typewriter-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+
 .text-purple {
   color: #9f238b;
 }
