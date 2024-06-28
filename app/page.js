@@ -2,6 +2,7 @@ import Layout from "@/components/global/Layout";
 import BannerCarousel from "@/components/sections/home/banner-carousel";
 import ExpertiseSection from "@/components/sections/home/expertise";
 import ExploreProjects from "@/components/sections/home/explore-projects";
+import HeroNewText from "@/components/sections/home/hero-2-text";
 import HeroSection from "@/components/sections/home/hero-section";
 import HomeBlogs from "@/components/sections/home/home-blogs";
 import HTestimonials from "@/components/sections/home/home-testimonials";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Layout>
         <HeroSection/>
+        <HeroNewText/>
         <OurProjects/>
         <ExpertiseSection/>
         <BannerCarousel/>
