@@ -7,7 +7,7 @@ const InnovationBox = () => {
       <section className="py-16">
         <div className="container">
           <div className="inn-wrapper grid grid-cols-1 md:grid-cols-2 items-center">
-            <div className="inn-text p-5">
+            <div className="inn-text p-5 order-1 md:order-none">
               <h6 className="manrope text-[#C69E58] font-semibold">
                 1st Innovation
               </h6>
@@ -48,7 +48,7 @@ const InnovationBox = () => {
       <section className="py-16">
         <div className="container">
           <div className="inn-wrapper grid grid-cols-1 md:grid-cols-2 items-center">
-            <div className="inn-img mx-auto md:mr-auto md:ml-0">
+            <div className="inn-img mx-auto md:mr-auto md:ml-0 ">
               <Image
                 src="/images/innovation-1.png"
                 width={400}

@@ -7,10 +7,10 @@ const SelectBox = ({ options, selected, setSelected, classNames , label }) => {
     <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
         <div className="relative my-2">
-          <Listbox.Button className="list-box-btn relative w-full cursor-default bg-white py-6 pl-3 pr-10 text-left text-gray-900   focus:outline-none focus:ring-2 focus:ring-black sm:text-sm sm:leading-6 md:border-r-2 md:border-b-0 border-b-2">
-          <p htmlFor="" className="uppercase manrope text-left pl-3 pb-3">{label}</p>
-            <span className="flex items-center">
-              <h5 className="ml-3 block truncate manrope">{selected.title}</h5>
+          <Listbox.Button className="list-box-btn relative w-full cursor-default bg-white py-6 md:py-0 pl-3 pr-10 text-left text-gray-900   focus:outline-none focus:ring-2 focus:ring-black sm:text-sm sm:leading-6 md:border-r-2 md:border-b-0 border-b-2">
+          <span htmlFor="" className="uppercase manrope text-left pl-3 pb-1">{label}</span>
+            <span className="flex items-center mt-1">
+              <h6 className="ml-3 block truncate manrope text-lg">{selected.title}</h6>
             </span>
             <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
               <ChevronUpDownIcon

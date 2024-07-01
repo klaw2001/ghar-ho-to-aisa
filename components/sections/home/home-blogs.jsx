@@ -8,7 +8,7 @@ const HomeBlogs = () => {
   const otherBlogs = homeblogs.filter(blog => !blog.pinned);
 
   return (
-    <section className="py-16">
+    <section className="py-32">
       <div className="container">
         <div className="blogs-wrapp">
           <h2 className="text-left">Our Latest News</h2>

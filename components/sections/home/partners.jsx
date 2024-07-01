@@ -4,7 +4,7 @@ import React from "react";
 
 const Partners = () => {
   return (
-    <section className="py-16 bg-lavendar">
+    <section className="py-16 bg-[#FEE9FE]">
       <div className="container">
         <div className="partners-wrap text-center">
           <h2>Partners</h2>
@@ -16,7 +16,7 @@ const Partners = () => {
                   key={ind}
                   width={75}
                   height={75}
-                  className="object-contain justify-self-center m-auto"
+                  className="object-contain justify-self-center m-auto mix-blend-darken	"
                 />
               </div>
             ))}

@@ -9,7 +9,7 @@ const KnowMoreAboutUs = () => {
           <h2>Know More About Us</h2>
           <p className=" manrope">Join our journey on youtube @GharHoToAisa</p>
         </div>
-        <div className="video-box grid md:grid-cols-2 grid-cols-1 border-2 border-black my-8">
+        <div className="video-box grid md:grid-cols-2 grid-cols-1 border-2 border-gray-400 my-8">
           <Image src="/images/video-text.png" width={650} height={500} />
           <div>
             <div className="flex flex-col justify-between w-full h-full p-8">

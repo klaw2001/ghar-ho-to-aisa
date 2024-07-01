@@ -27,7 +27,7 @@ export default function TestimonialWrapper() {
           clickable: true,
         }}
         loop={true}
-        modules={[Autoplay, Pagination]}
+        modules={[ Autoplay]}
         className="mySwiper bg-fixed "
       >
         <SwiperSlide>

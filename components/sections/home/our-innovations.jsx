@@ -37,15 +37,15 @@ const Innovations = () => {
     return { __html: icon };
   };
   return (
-    <section className="py-16">
+    <section className="pb-24 md:pb-16  md:py-16">
       <div className="container">
         <div className="innovations-wrapper grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="inn-image">
-            <Image src="/images/innovations.png" width={711} height={800} className="md:h-[900px]" />
+            <Image src="/images/innovations.png" width={711} height={700} className="md:h-[800px]" />
           </div>
-          <div className="inn-text md:p-8">
-            <h2>Our Innovations</h2>
-            <p className="my-6 manrope">
+          <div className="inn-text md:px-8">
+            <h2 className="text-center">Our Innovations</h2>
+            <p className="my-6 manrope text-center">
               We prioritize developing innovative solutions that directly
               address their needs. Our dedicated team is driven by a
               customer-centric approach, ensuring every product and service we

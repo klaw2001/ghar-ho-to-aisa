@@ -135,7 +135,7 @@ p {
   position: absolute;
   top: 55%;
   left: 0;
-  right: 90%;
+  right: 85%;
   width: -webkit-fill-available;
   height: 1px;
   border: 1px solid #000;
@@ -143,20 +143,20 @@ p {
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: auto !important;
-  right: 180px !important;
+  right: 55px !important;
   /* top: 105%; */
   /* bottom: 20px; */
-  top: 95% !important;
+  top: 96% !important;
   z-index: 99999999;
 }
 
 .swiper-button-next {
-  right: 130px !important;
+  right: 0px !important;
   left: auto;
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  top: 95% !important;
+  top: 96% !important;
 }
 .swiper-button-prev {
   background-image: url('data:image/svg+xml,<svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><path d="M11 9L8 12M8 12L11 15M8 12H16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="%23000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"/></g></svg>') !important;
@@ -210,7 +210,7 @@ p {
   opacity: 0;
 }
 .nav-linkk:hover .menu-text-hover{
-  transform: translateY(-35px);
+  transform: translateY(-37px);
   opacity: 100;
 }
 

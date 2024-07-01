@@ -15,7 +15,7 @@ const CardOne = () => {
               height={"300px"}
             />
           </div>
-          <div class="row-span-3 ...">
+          <div class="row-span-3 md:h-[522px] ...">
              <TestimonialCard
               name={"Ganesh"}
               title={"Customer"}

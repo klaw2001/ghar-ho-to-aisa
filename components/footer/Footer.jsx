@@ -46,9 +46,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-purple">
+    <footer className="bg-purple mt-32">
       <div className="footer-wrap">
-        <div className="py-16 bg-[url('/images/footer-bg.png')] bg-cover	">
+        <div className="py-16 bg-[url('/images/footer-bg.png')] bg-center	 bg-cover	">
           <div className="container mx-auto footer-one flex flex-col md:flex-row justify-between items-center">
             <div className="w-full md:w-3/5 text-center md:text-left">
               <h1 className="manrope text-white">Join Our Parivaar</h1>

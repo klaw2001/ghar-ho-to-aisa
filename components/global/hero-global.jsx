@@ -32,7 +32,7 @@ const HeroGlobal = ({
             />
           )}
         </div>
-        <CircularText />
+        {/* <CircularText /> */}
       </section>
     </>
   );

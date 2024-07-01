@@ -24,7 +24,7 @@ export default function DistrictNavCarousel({ districts }) {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper my-12"
+        className="mySwiper mt-12"
       >
         {districts.map((elem, ind) => (
           <SwiperSlide key={elem.id} className="text-2xl manrope font-bold district-swiper">{elem.dist}</SwiperSlide>

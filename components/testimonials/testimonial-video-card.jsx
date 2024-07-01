@@ -3,7 +3,7 @@ import Rating from "./ratings";
 
 const TestimonialVideoCard = ({ video, name, title }) => {
   return (
-    <article className="bg-[#D9D9D9] relative h-full">
+    <article className="border-2 border-black relative h-full rounded">
       <div className="flex justify-between items-end absolute bottom-0 left-0 right-0 h-full p-4">
         <div className="play-icon ">
           <svg

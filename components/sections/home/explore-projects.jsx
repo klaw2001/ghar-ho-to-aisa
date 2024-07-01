@@ -11,12 +11,12 @@ const ExploreProjects = () => {
     { id: 6, dist: "Malad" },
   ];
   return (
-    <section className="py-16 bg-lavendar">
-      <div className="container">
+    <section className="mb-24 md:my-28 py-16 bg-[#FEE9FE]">
+      <div className="container mx-auto">
         <div className="exp-projects-wrapper text-center">
-          <h1 className="relative exp-heading">
+          <h2 className="relative exp-heading">
             Explore Projects in your desired locations
-          </h1>
+          </h2>
           <span className="text-sm manrope">
             Explore our wide range of residential and commercial properties and
             discover your perfect space.

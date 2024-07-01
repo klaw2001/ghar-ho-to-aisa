@@ -5,9 +5,10 @@ import React from "react";
 
 const HTestimonials = () => {
   return (
-    <section className="py-16">
+    <section className="mb-24 md:md-0 py-16">
       <div className="container">
-        <h2 className="mb-6 text-center">Hear from our Customers</h2>
+        <h2 className="mb-6 text-center md:block hidden">Hear from our Customers</h2>
+        <h3 className="mb-12 text-center md:hidden block">Hear from our Customers</h3>
         <div className="lg:block hidden">
           <TestimonialWrapper />
         </div>
