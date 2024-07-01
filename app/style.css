@@ -194,6 +194,25 @@ p {
 .spin-animation {
   animation: spin 10s linear infinite;
 }
+.menu-text-hover{
+  transform: translateY(10px);
+  transition: .1s;
+}
+.blog-text-hover{
+  opacity: 0;
+  transform: translateY(-50px);
+
+}
+.menu-text .main-text{
+  transition: .1s;
+}
+.nav-linkk:hover .menu-text .main-text{
+  opacity: 0;
+}
+.nav-linkk:hover .menu-text-hover{
+  transform: translateY(-35px);
+  opacity: 100;
+}
 
 
 @media screen and (max-width: 640px) {

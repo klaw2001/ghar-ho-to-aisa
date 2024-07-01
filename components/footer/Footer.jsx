@@ -111,15 +111,15 @@ const Footer = () => {
                 info@gharhotoaisa.com
               </a>
             </div>
-            <div className="icons-box flex items-center gap-3 mt-3">
+            <div className="icons-box flex items-center gap-3 mt-8">
               <span>
-                <FaFacebook className="text-2xl text-white" />
+                <FaFacebook className="text-2xl text-dark" />
               </span>
               <span>
-                <FaInstagram className="text-2xl text-white" />
+                <FaInstagram className="text-2xl text-dark" />
               </span>
               <span>
-                <FaYoutube className="text-2xl text-white" />
+                <FaYoutube className="text-2xl text-dark" />
               </span>
             </div>
           </div>
