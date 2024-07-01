@@ -2,12 +2,13 @@ import { Listbox, Transition } from "@headlessui/react";
 import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import React, { Fragment } from "react";
 
-const SelectBox = ({ options, selected, setSelected, classNames }) => {
+const SelectBox = ({ options, selected, setSelected, classNames , label }) => {
   return (
     <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
         <div className="relative my-2">
           <Listbox.Button className="list-box-btn relative w-full cursor-default bg-white py-6 pl-3 pr-10 text-left text-gray-900   focus:outline-none focus:ring-2 focus:ring-black sm:text-sm sm:leading-6 md:border-r-2 md:border-b-0 border-b-2">
+          <p htmlFor="" className="uppercase manrope text-left pl-3 pb-3">{label}</p>
             <span className="flex items-center">
               <h5 className="ml-3 block truncate manrope">{selected.title}</h5>
             </span>

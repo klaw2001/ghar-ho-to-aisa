@@ -108,9 +108,10 @@ export default function HomeFilters() {
   const [selectedLocation, setSelectedLocation] = useState(location[0]);
 
   return (
-    <div className="grid md:grid-cols-5 grid-cols-1 border border-2 p-4 gap-2 my-6 items-center">
+    <div className="grid md:grid-cols-5 grid-cols-1 border border-2 border-black px-4 gap-2 my-6 items-center">
       {/* Render Select Box for Property Type */}
       <SelectBox
+      label={'Project Type'}
         options={propertyType}
         selected={selectedPropertyType}
         setSelected={setSelectedPropertyType}
@@ -119,6 +120,7 @@ export default function HomeFilters() {
 
       {/* Render Select Box for Bedroom */}
       <SelectBox
+      label={'Configuration'}
         options={bedroom}
         selected={selectedBedroom}
         setSelected={setSelectedBedroom}
@@ -127,6 +129,7 @@ export default function HomeFilters() {
 
       {/* Render Select Box for Price Range */}
       <SelectBox
+      label={'Price Range'}
         options={priceRange}
         selected={selectedPriceRange}
         setSelected={setSelectedPriceRange}
@@ -135,12 +138,13 @@ export default function HomeFilters() {
 
       {/* Render Select Box for Location */}
       <SelectBox
+      label={'Location'}
         options={location}
         selected={selectedLocation}
         setSelected={setSelectedLocation}
         classNames={classNames}
       />
-      <button className="app-btn manrope my-5 my-md-0">Search Properties</button>
+      <button className="purple-btn manrope my-5 my-md-0">Search Properties</button>
     </div>
   );
 }

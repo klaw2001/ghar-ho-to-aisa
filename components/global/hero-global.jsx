@@ -10,13 +10,14 @@ const HeroGlobal = ({
   spanText,
   alignBreadcrumb,
   image,
+  page
 }) => {
   return (
     <>
       <section className="relative">
         <div className="container">
           <div className={myclass}>
-            <BreadcrumbBox page={"About"} alignment={alignBreadcrumb} />
+            <BreadcrumbBox page={page} alignment={alignBreadcrumb} />
             <h1 className="text-[#3A0D32]">
               {title} <span className="text-purple">{spanText}</span>
             </h1>

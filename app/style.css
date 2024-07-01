@@ -52,6 +52,11 @@ p {
   color: #fff;
   border-radius: 4px;
 }
+.purple-btn{
+  background-color: #9f238b;
+  color: #fff;
+  padding: 14px 12px;
+}
 .white-btn {
   border: 2px solid;
   padding: 7px 12px;
