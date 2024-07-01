@@ -12,6 +12,7 @@ const page = () => {
         title="Our"
         spanText="Latest Blogs"
         page={'Blogs'}
+        circleAlign={"-bottom-[58px] -right-[58px]"}
       />
         <BlogBox/>
     </NewLayout>

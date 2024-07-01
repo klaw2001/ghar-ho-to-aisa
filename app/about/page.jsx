@@ -17,6 +17,7 @@ const AboutPage = () => {
         spanText="Mission"
         image="/images/banner1.jpg"
         page={'About'}
+        circleAlign={"-bottom-[58px] -right-[58px]"}
       />
       <TimelineSection/>
       <CurrentProjects/>

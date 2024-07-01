@@ -213,7 +213,71 @@ p {
   transform: translateY(-37px);
   opacity: 100;
 }
+/* pie chart  */
+ul.recharts-default-legend {
+  display: flex;
+  border: 1px solid grey;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px !important;
+}
+ul.recharts-default-legend li{
+  display: flex !important;
+  align-items: center !important;
+}
+ul.recharts-default-legend li span{
+  font-family: "Manrope", sans-serif !important;
+  color: #000 !important;
+}
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+}
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  border: 3px solid #9F238B  ;
+  background: #CC8AC4;
+  cursor: pointer;
+  margin-top: -10px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: #9F238B;
+  border-radius: 10px;
+}
+
+
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
 
 @media screen and (max-width: 640px) {
   h1 {

@@ -1,7 +1,7 @@
 import React from "react";
 import BreadcrumbBox from "./breadcrumb-box";
 import Image from "next/image";
-import CircularText from "./circular-text";
+import CircularTextNew from "./circular-text-2";
 
 const HeroGlobal = ({
   myclass,
@@ -10,7 +10,8 @@ const HeroGlobal = ({
   spanText,
   alignBreadcrumb,
   image,
-  page
+  page,
+  circleAlign
 }) => {
   return (
     <>
@@ -23,16 +24,21 @@ const HeroGlobal = ({
             </h1>
             <p className="manrope">{para}</p>
           </div>
-          {image && (
-            <Image
-              src={image}
-              width={1200}
-              height={600}
-              className="mx-auto my-16 object-contain"
-            />
-          )}
+          <div className="relative">
+            {image && (
+              <>
+              
+              <Image
+                src={image}
+                width={1200}
+                height={600}
+                className="mx-auto w-full my-16 object-contain"
+              />
+            <CircularTextNew alignment={circleAlign} />
+              </>
+            )}
+          </div>
         </div>
-        {/* <CircularText /> */}
       </section>
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const CircularTextNew = ({text}) => {
+const CircularTextNew = ({text , alignment}) => {
   const svgStyles = {
     fill: "currentColor",
     height: "auto",
@@ -12,8 +12,8 @@ const CircularTextNew = ({text}) => {
   //   flex w-[220px] justify-center items-center
   return (
     <>
-      <div className="absolute w-full left-50 flex justify-end right-0 top-[4rem] right-[2rem] z-10 hidden md:flex">
-        <div className="circular-text flex w-[200px] relative">
+      <div className={`absolute w-full left-50 flex justify-end right-0  z-10 hidden md:flex ${alignment}`}>
+        <div className="circular-text flex w-[133px] relative">
           <svg
             viewBox="0 0 100 100"
             width="100"
@@ -42,7 +42,7 @@ const CircularTextNew = ({text}) => {
             </text>
           </svg>
 
-          <div className="home rounded-full bg-[#9F238B] text-white w-12 h-12 md:w-16 md:h-16 font-bold flex justify-center items-center absolute top-[25px] left-[25px] md:top-[47px] md:left-[49px]">
+          <div className="home rounded-full bg-[#9F238B] text-white m-auto m w-12 h-12 md:w-16 md:h-16 font-bold flex justify-center items-center absolute top-0 left-0 right-0 bottom-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

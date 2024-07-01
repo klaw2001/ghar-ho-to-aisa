@@ -1,5 +1,6 @@
 import React from "react";
 import { counterJson } from "@/utils/counterJson";
+import CircularText from "@/components/global/circular-text";
 import CircularTextNew from "@/components/global/circular-text-2";
 
 const HeroNewText = () => {
@@ -26,7 +27,7 @@ const HeroNewText = () => {
           </div>
         </div>
         <div>
-          <CircularTextNew />
+          <CircularTextNew alignment={'top-0 right-20'}/>
         </div>
       </div>
     </section>

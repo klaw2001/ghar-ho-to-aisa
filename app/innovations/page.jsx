@@ -1,5 +1,6 @@
 import HeroGlobal from "@/components/global/hero-global";
 import NewLayout from "@/components/global/new-layout";
+import EmiSection from "@/components/sections/innovations/emi-cal";
 import GrowthPartner from "@/components/sections/innovations/growth-partner";
 import InnovationBox from "@/components/sections/innovations/innovation-box";
 import React from "react";
@@ -15,8 +16,10 @@ const page = () => {
         spanText="Innovations"
         page={"Innovations"}
         image="/images/banner1.jpg"
+        circleAlign={"-bottom-[58px] -right-[58px]"}
       />
       <InnovationBox/>
+      <EmiSection/>
       <GrowthPartner/>
     </NewLayout>
   );
