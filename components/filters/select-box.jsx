@@ -6,7 +6,7 @@ const SelectBox = ({ options, selected, setSelected, classNames , label }) => {
   return (
     <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
-        <div className="relative my-2">
+        <div className="relative my-2" daat-aos='fade-up'>
           <Listbox.Button className="list-box-btn relative w-full cursor-default bg-white py-6 md:py-0 pl-3 pr-10 text-left text-gray-900   focus:outline-none focus:ring-2 focus:ring-black sm:text-sm sm:leading-6 md:border-r-2 md:border-b-0 border-b-2">
           <span htmlFor="" className="uppercase manrope text-left pl-3 pb-1">{label}</span>
             <span className="flex items-center mt-1">

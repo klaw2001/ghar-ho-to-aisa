@@ -53,8 +53,8 @@ const HeaderForOthers = () => {
           </Link>
         </div>
         <div className="flex items-center gap-6">
-          <div className="redirection hidden md:block mr-4">
-            <Link href="/contact" className={`white-btn  manrope text-black border-black`}>
+          <div className="redirection hidden md:block mr-4 border-white overflow-hidden py-[0.8em] ">
+            <Link href="/contact" className={`white-btn  manrope text-black border-black hover:text-white`}>
               Contact Us
             </Link>
           </div>

@@ -62,13 +62,13 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center gap-6">
-          <div className="redirection hidden md:block mr-4">
+          <div className={`redirection hidden overflow-hidden md:block py-[0.8em] mr-4 ${isScrolled ? 'border-white':'border-black'}`}>
             <Link
               href="/contact"
               className={`white-btn  manrope ${
                 isScrolled
-                  ? "text-black border-black"
-                  : "text-white border-white"
+                  ? "text-black border-black hover:text-white"
+                  : "text-white border-white hover:text-white"
               }`}
             >
               Contact Us

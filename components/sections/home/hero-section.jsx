@@ -21,7 +21,7 @@ const HeroSection = () => {
           // style={{ zIndex: 999 }}
         >
           <div className="container-mx-auto">
-            <div class="">
+            <div class="" data-aos="fade-up">
               {/* <div class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold"> */}
               <span className="text-white text-3xl md:text-5xl">Delivering</span>
               <br />

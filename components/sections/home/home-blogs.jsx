@@ -11,9 +11,9 @@ const HomeBlogs = () => {
     <section className="py-32">
       <div className="container">
         <div className="blogs-wrapp">
-          <h2 className="text-left">Our Latest News</h2>
+          <h2 className="text-left" data-aos="fade-right">Our Latest News</h2>
           <div className="grid md:grid-cols-2 grid-cols-1">
-            <div className="grid-box-1">
+            <div className="grid-box-1"  data-aos="fade-right">
               <BlogCard
                 image={pinnedBlog.image}
                 title={pinnedBlog.title}
@@ -24,7 +24,7 @@ const HomeBlogs = () => {
               />
             </div>
             <div className="grid-box-2">
-              <div className="grid grid-cols-1">
+              <div className="grid grid-cols-1"  data-aos="fade-left">
                 {otherBlogs.map((blog, index) => (
                   <BlogCard
                     key={index}

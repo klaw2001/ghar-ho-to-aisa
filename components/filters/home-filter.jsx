@@ -111,6 +111,7 @@ export default function HomeFilters() {
     <div
       className="grid md:grid-cols-5 grid-cols-1 border-2 border-gray px-4 gap-2 mt-14 mb-14 items-center"
       style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;" }}
+      data-aos='fade-up'
     >
       {/* Render Select Box for Property Type */}
       <SelectBox

@@ -40,12 +40,12 @@ const Innovations = () => {
     <section className="pb-24 md:pb-16  md:py-16">
       <div className="container">
         <div className="innovations-wrapper grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="inn-image">
+          <div className="inn-image" data-aos="fade-right">
             <Image src="/images/innovations.png" width={711} height={700} className="md:h-[800px]" />
           </div>
           <div className="inn-text md:px-8">
-            <h2 className="text-center">Our Innovations</h2>
-            <p className="my-6 manrope text-center">
+            <h2 className="text-center" data-aos="fade-up">Our Innovations</h2>
+            <p className="my-6 manrope text-center" data-aos="fade-up">
               We prioritize developing innovative solutions that directly
               address their needs. Our dedicated team is driven by a
               customer-centric approach, ensuring every product and service we
@@ -54,7 +54,7 @@ const Innovations = () => {
             </p>
             <div className="grid grid-cols-1 p-4 gap-7">
               {list.map((elem, ind) => (
-                <div className="list-box flex items-start gap-3" key={ind}>
+                <div className="list-box flex items-start gap-3" key={ind} data-aos="fade-up">
                   <div
                     className="icon-box mt-2 font-bold"
                     dangerouslySetInnerHTML={createIcon(elem.icon)}

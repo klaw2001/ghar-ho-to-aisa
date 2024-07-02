@@ -7,7 +7,7 @@ const HeroNewText = () => {
   return (
     <section className="hero-new text relative flex py-16">
       <div className="container mx-auto relative">
-        <div className="hero-text md:px-6 md:pt-19 p-4 md:w-3/5">
+        <div className="hero-text md:px-6 md:pt-19 p-4 md:w-3/5" data-aos='fade-up'>
           <h2 className="">
             Our Journey Towards <span className="text-purple">Excellence!</span>
           </h2>

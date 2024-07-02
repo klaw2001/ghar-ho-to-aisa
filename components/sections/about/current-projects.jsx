@@ -18,9 +18,11 @@ const CurrentProjects = () => {
               create enhances customer experiences and delivers tangible
               results.
             </p>
-            <Link href="/projects" className="app-btn manrope">
-              View All Projects
+            <div className="redirection mr-4 border-black w-max overflow-hidden py-[0.8em] ">
+            <Link href="/projects" className={`white-btn  manrope text-black border-black hover:text-white`}>
+              Contact Us
             </Link>
+          </div>
           </div>
           <div className="col-span-7">
             <div className="grid grid-cols-2 gap-4">
