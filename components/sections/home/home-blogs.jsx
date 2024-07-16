@@ -24,7 +24,7 @@ const HomeBlogs = () => {
               />
             </div>
             <div className="grid-box-2">
-              <div className="grid grid-cols-1"  data-aos="fade-left">
+              <div className="grid grid-cols-1" >
                 {otherBlogs.map((blog, index) => (
                   <BlogCard
                     key={index}

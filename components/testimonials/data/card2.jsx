@@ -6,7 +6,7 @@ const CardTwo = () => {
   return (
     <div class="grid grid-cols-3 gap-4">
       <div class="relative h-full">
-        <TestimonialVideoCard name={"John Doe"} title={"Manager"} />
+        <TestimonialVideoCard name={"John Doe"} title={"Manager"} video={'/videos/test1.mp4'} />
       </div>
       <div class="">
         <TestimonialCard

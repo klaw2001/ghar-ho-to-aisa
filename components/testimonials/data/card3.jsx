@@ -6,7 +6,7 @@ const CardThree = () => {
   return (
     <div class="grid grid-rows-1 grid-cols-4 grid-flow-col gap-4">
           <div class="row-span-3 relative h-full">
-          <TestimonialVideoCard name={"John Doe"} title={"Manager"} />
+          <TestimonialVideoCard name={"John Doe"} title={"Manager"} video={'/videos/test2.mp4'}/>
           </div>
           
           <div class="col-span-2 ... relative h-[250px]">

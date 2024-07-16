@@ -19,15 +19,15 @@ export default function TestimonialWrapper() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
         }}
         loop={true}
-        modules={[ Autoplay]}
+        // modules={[ Autoplay]}
         className="mySwiper bg-fixed "
       >
         <SwiperSlide>

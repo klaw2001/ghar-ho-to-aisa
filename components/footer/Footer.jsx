@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="py-16 bg-[url('/images/footer-bg.png')] bg-center	 bg-cover	">
           <div className="container mx-auto footer-one flex flex-col md:flex-row justify-between items-center">
             <div className="w-full md:w-3/5 text-center md:text-left">
-              <h1 className="manrope text-white"  data-aos="fade-up">Join Our Parivaar</h1>
+              <h1 className=" text-white"  data-aos="fade-up">Join Our Parivaar</h1>
               <p className="manrope text-white md:mr-40" data-aos="fade-up">
                 By putting the customer at the heart of everything we do, we not
                 only deliver exceptional results but also forge meaningful and
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-2/5 text-center md:text-right my-4 md:my-0">
               <div className="md:w-max md:text-left md:ml-auto">
-                <h1 className="manrope text-white" data-aos="fade-up">Subscribe</h1>
+                <h1 className=" text-white" data-aos="fade-up">Subscribe</h1>
                  
                 <div className="newsletter-box flex gap-2 md:justify-start justify-center mb-3" data-aos="fade-up" >
                   <input

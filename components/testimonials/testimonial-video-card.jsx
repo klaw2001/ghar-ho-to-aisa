@@ -4,6 +4,7 @@ import Rating from "./ratings";
 const TestimonialVideoCard = ({ video, name, title }) => {
   return (
     <article className="border-2 border-black relative h-full rounded">
+      <video src={video} className="object-cover w-full h-[522px]" loop></video>
       <div className="flex justify-between items-end absolute bottom-0 left-0 right-0 h-full p-4">
         <div className="play-icon ">
           <svg
@@ -22,9 +23,9 @@ const TestimonialVideoCard = ({ video, name, title }) => {
           </svg>
         </div>
         <div className="test-test box">
-            <h5 className="font-bold manrope">{name}</h5>
-            <span className="text-xs manrope">{title}</span>
-            <Rating/>
+          <h5 className="font-bold manrope">{name}</h5>
+          <span className="text-xs manrope">{title}</span>
+          <Rating />
         </div>
       </div>
     </article>

@@ -1,14 +1,27 @@
-// src/components/Slider.jsx
 import React from "react";
+
 const formatNumber = (num) => {
   if (num < 100) {
     return num;
   }
-  return new Intl.NumberFormat('en-IN', {
+  return new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 0,
   }).format(num);
 };
+
 const Slider = ({ label, min, max, step, value, onChange, unit, small }) => {
+  const handleInputChange = (e) => {
+    const num = e.target.value.replace(/,/g, ""); // Remove commas
+    const parsedValue = parseFloat(num);
+    if (!isNaN(parsedValue) && parsedValue >= min && parsedValue <= max) {
+      onChange({ target: { value: parsedValue } });
+    } else if (parsedValue < min) {
+      onChange({ target: { value: min } });
+    } else if (parsedValue > max) {
+      onChange({ target: { value: max } });
+    }
+  };
+
   return (
     <div className="flex flex-col mb-4 w-full">
       <div className="flex justify-between items-center mb-4">
@@ -16,7 +29,7 @@ const Slider = ({ label, min, max, step, value, onChange, unit, small }) => {
         <input
           type="text"
           value={formatNumber(value)}
-          onChange={onChange}
+          onChange={handleInputChange}
           className={`amt-input p-2 border rounded border-black manrope font-semibold ${
             small && "w-[70px]"
           }`}
@@ -33,15 +46,15 @@ const Slider = ({ label, min, max, step, value, onChange, unit, small }) => {
       />
       <div className="flex justify-between text-xs mt-2">
         <span>
-          {min}
+          {formatNumber(min)}
           {unit}
         </span>
         <span>
-          {value}
+          {formatNumber(value)}
           {unit}
         </span>
         <span>
-          {max}
+          {formatNumber(max)}
           {unit}
         </span>
       </div>

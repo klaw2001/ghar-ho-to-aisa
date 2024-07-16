@@ -7,7 +7,7 @@ const formatNumber = (num) => {
   if (num < 100) {
     return num;
   }
-  return new Intl.NumberFormat('en-IN', {
+  return new Intl.NumberFormat("en-IN", {
     maximumFractionDigits: 0,
   }).format(num);
 };
@@ -42,29 +42,17 @@ const EmiCalculator = () => {
               onChange={(e) => setFlatCost(Number(e.target.value))}
               unit="₹"
             />
-            {/* <Input
-            label="Flat Cost"
-            value={flatCost}
-            onChange={(e) => setFlatCost(Number(e.target.value))}
-            unit="₹"
-          /> */}
           </div>
           <div className="slider-wrapper w-full flex">
             <Slider
               label="Down Payment"
               min={100000}
-              max={100000000}
+              max={50000000}
               step={100000}
               value={downPayment}
               onChange={(e) => setDownPayment(Number(e.target.value))}
               unit="₹"
             />
-            {/* <Input
-            label="Down Payment"
-            value={downPayment}
-            onChange={(e) => setDownPayment(Number(e.target.value))}
-            unit="₹"
-          /> */}
           </div>
 
           <div className="slider-wrapper w-full flex gap-4">
@@ -79,13 +67,6 @@ const EmiCalculator = () => {
                 unit="%"
                 small={true}
               />
-              {/* <Input
-              label="Interest Rate (% P.A.)"
-              value={interestRate}
-              onChange={(e) => setInterestRate(Number(e.target.value))}
-              unit="%"
-              small={true}
-            /> */}
             </div>
             <div className="mb-4 flex w-full">
               <Slider
@@ -98,13 +79,6 @@ const EmiCalculator = () => {
                 onChange={(e) => setTenure(Number(e.target.value))}
                 unit="Years"
               />
-              {/* <Input
-              label="Tenure (Years)"
-              value={tenure}
-              onChange={(e) => setTenure(Number(e.target.value))}
-              unit="Years"
-              small={true}
-            /> */}
             </div>
           </div>
         </div>
@@ -123,17 +97,26 @@ const EmiCalculator = () => {
                   {" "}
                   Total Payment (Principal + Interest)
                 </p>
-                <h4 className="manrope"> ₹{formatNumber(totalPayment.toFixed(2))}</h4>
+                <h4 className="manrope">
+                  {" "}
+                  ₹{formatNumber(totalPayment.toFixed(2))}
+                </h4>
               </div>
               <div className="amount-box">
                 <p className="text-gray small-para font-regular manrope">
                   Interest Given to bank (A)
                 </p>
-                <h4 className="manrope">₹{formatNumber(totalInterest.toFixed(2))}</h4>
+                <h4 className="manrope">
+                  ₹{formatNumber(totalInterest.toFixed(2))}
+                </h4>
               </div>
             </div>
             <div className="pie-chart-wrap md:w-3/5 mx-auto">
-            <PieChartComponent principal={loanAmount} interest={totalInterest} /></div>
+              <PieChartComponent
+                principal={loanAmount}
+                interest={totalInterest}
+              />
+            </div>
           </div>
         </div>
       </div>

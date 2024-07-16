@@ -43,9 +43,9 @@ const CurrentProjects = () => {
     <section className="my-16 md:my-32 py-16 bg-[#FEE9FE]">
       <div className="container">
         <div className="exp-projects-wrapper text-center">
-          <h6 className="relative font-bold mb-5">
+          <h2 className="relative font-bold mb-5">
             Our Vision
-          </h6>
+          </h2>
           <span className="manrope mt-5 text-2xl font-medium">
           Empowered by a land bank exceeding 1 crore SqFt of constructible area, our development pace of 1 home per day reflects our commitment to your dreams. With dynamic leadership, a passionate team, and innovative products, we're poised for further growth, ready to give wings to your dream home aspirations.
           </span>
