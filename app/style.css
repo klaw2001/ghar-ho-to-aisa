@@ -42,6 +42,10 @@ p {
 .manrope {
   font-family: "Manrope", sans-serif !important;
 }
+.my-iframe iframe{
+  width: 100% !important;
+  height: 500px;
+}
 /* Navbar */
 .app-btn {
   background-color: #9f238b;
@@ -312,6 +316,9 @@ input[type=range]::-ms-track {
 }
 
 @media screen and (max-width: 640px) {
+  .my-iframe iframe{
+    width: 380px !important;
+  }
   h1 {
     font-size: 40px !important;
   }
