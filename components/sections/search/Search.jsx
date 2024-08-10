@@ -1,24 +1,27 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ImageView from '../projects/image-view'
 import FilteredProjects from './searched-projects'
 
 const Search = () => {
     const [filters, setFilters] = useState([])
-    const searchFilters = [
-        {
-            item: 'Apartment'
-        },
-        {
-            item: '2 Bedrooms'
-        },
-        {
-            item: '85,000'
-        },
-        {
-            item: 'Mira Road'
-        },
-    ]
+  
+    useEffect(() => {
+        const savedFilters = JSON.parse(localStorage.getItem('homeFilters'));
+        if (savedFilters) {
+          const { selectedPropertyType, selectedBedroom, selectedPriceRange, selectedLocation } = savedFilters;
+          setFilters([
+            { item: selectedPropertyType.title },
+            { item: selectedBedroom.title },
+            { item: selectedPriceRange.title },
+            { item: selectedLocation.title },
+          ]);
+        }
+      }, []);
+
+      const removeItem = (item) => {
+        setFilters(filters.filter(filter => filter.item !== item));
+      };
     return (
         <section className="py-16">
             <div className="container">
@@ -56,11 +59,14 @@ const Search = () => {
                     </div>
                     <div className="filters-box grid md:grid-cols-2 grid-cols-1 mt-6 items-center">
                         <div className="filters flex gap-8 flex-wrap md:flex-nowrap justify-center md:justify-start">
-                            {searchFilters && searchFilters.length > 1 && (
-                                searchFilters.map((elem, ind) => (
-                                    <div key={ind} className='text-base bg-gray-200 p-2 manrope flex gap-4 rounded'>{elem.item} <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            {filters && filters.length > 1 && (
+                                filters.map((elem, ind) => (
+                                    <div key={ind} className='text-base bg-gray-200 p-2 manrope flex gap-4 rounded'>{elem.item} <span className='cursor-pointer' onClick={() => removeItem(elem.item)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                                     </svg>
+                                    </span>
+                                    
                                     </div>
                                 ))
                             )}

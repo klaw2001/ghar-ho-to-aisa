@@ -11,7 +11,7 @@ const OurProjects = () => {
         <div className="projects-wrapper text-center">
           <h2 data-aos='fade-up'>Browse Properties</h2>
           <HomeFilters />
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+          {/* <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             {properties.map((elem, ind) => (
               <div
                 className="property-box flex text-left gap-1 items-center flex-col md:flex-row"
@@ -58,7 +58,7 @@ const OurProjects = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
