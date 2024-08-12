@@ -29,9 +29,9 @@ const BlogCard = ({ image, title, para, time, url, pinned , fullImage , blogPage
           </Link>
         </div>
       ) : (
-        <div className={`flex ${!blogPage && 'md:flex-row'} flex-col gap-2 py-6`}>
+        <div className={`flex ${!blogPage && 'md:flex-row'} flex-col gap-2 py-6 md:w-auto w-[360px]`}>
           <div className="md:w-2/6 h-full">
-            <Image src={image} width={250} height={250} className="w-full h-full" />
+            <Image src={image} width={250} height={250} className="w-full md:h-full h-[250px] object-cover" />
           </div>
           <div className="md:w-4/6 w-full">
           <div className="flex gap-4 items-center">

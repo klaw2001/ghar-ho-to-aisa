@@ -9,10 +9,12 @@ import { AiOutlineClose } from "react-icons/ai";
 import logo from "@/public/images/logo-new.png";
 import logo2 from "@/assets/images/logo.png";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import SearchBox from "../global/search-box";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollPosition , setScrollPosition] = useState(0)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,6 +23,8 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
+      setScrollPosition(scrollPosition)
+
       const heroSectionHeight = 0;
       if (scrollPosition > heroSectionHeight) {
         setIsScrolled(true);
@@ -213,6 +217,10 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {isScrolled && scrollPosition < 6000 && (
+
+      <SearchBox/>
+      )}
     </header>
   );
 };

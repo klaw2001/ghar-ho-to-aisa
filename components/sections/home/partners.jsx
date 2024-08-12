@@ -10,7 +10,7 @@ const Partners = () => {
           <h2 data-aos="fade-up">Partners</h2>
           <div className="flex flex-wrap justify-center gap-x-8 md:gap-x-24 gap-y-12 my-10 mx-auto">
             {dynamicBrands.map((elem, ind) => (
-              <div style={{width:"100px"}} className="text-center m-auto" >
+              <div style={{width:"100px"}} className="text-center m-auto" key={ind}>
                 <Image
                   src={elem.img}
                   key={ind}

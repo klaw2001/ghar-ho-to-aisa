@@ -13,7 +13,6 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 const HeaderForOthers = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

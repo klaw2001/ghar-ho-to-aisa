@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const OurProjects = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 hidden md:block">
       <div className="container">
         <div className="projects-wrapper text-center">
           <h2 data-aos='fade-up'>Browse Properties</h2>

@@ -27,7 +27,7 @@ export default function DistrictNavCarousel({ districts }) {
         className="mySwiper mt-12"
       >
         {districts.map((elem, ind) => (
-          <SwiperSlide key={elem.id} className="text-2xl manrope font-bold district-swiper">{elem.dist}</SwiperSlide>
+          <SwiperSlide key={elem.id + ind} className="text-2xl manrope font-bold district-swiper">{elem.dist}</SwiperSlide>
         ))}
       </Swiper>
     </>

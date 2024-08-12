@@ -8,12 +8,12 @@ const HomeBlogs = () => {
   const otherBlogs = homeblogs.filter(blog => !blog.pinned);
 
   return (
-    <section className="py-32">
+    <section className="py-32 hidden md:block">
       <div className="container">
         <div className="blogs-wrapp">
           <h2 className="text-left" data-aos="fade-right">Our Latest News</h2>
           <div className="grid md:grid-cols-2 grid-cols-1">
-            <div className="grid-box-1"  data-aos="fade-right">
+            <div className="grid-box-1 "  data-aos="fade-right">
               <BlogCard
                 image={pinnedBlog.image}
                 title={pinnedBlog.title}
@@ -27,7 +27,7 @@ const HomeBlogs = () => {
               <div className="grid grid-cols-1" >
                 {otherBlogs.map((blog, index) => (
                   <BlogCard
-                    key={index}
+                    key={index + blog.id}
                     image={blog.image}
                     title={blog.title}
                     para={blog.para}

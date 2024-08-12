@@ -19,7 +19,7 @@ const HeroNewText = () => {
           </p>
           <div className="counter-wrapper grid grid-cols-2 gap-2 mt-3 w-max">
             {counterJson.map((elem, ind) => (
-              <div className="counter-box " key={ind}>
+              <div className="counter-box " key={ind + elem.number}>
                 <h3 className="text-purple manrope">{elem.number}</h3>
                 <h4 className="manrope">{elem.text}</h4>
               </div>

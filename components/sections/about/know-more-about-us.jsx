@@ -11,8 +11,8 @@ const KnowMoreAboutUs = () => {
         </div>
         <div className="video-box grid md:grid-cols-2 grid-cols-1 border-2 border-gray-400 my-8">
           {/* <Image src="/images/video-text.png" width={650} height={500} /> */}
-          <div>
-          <iframe width="560" height="315" className="w-[650px] h-[500px]" src="https://www.youtube.com/embed/msQdi_Tqbyo?si=MZdCoD3QW1W6P5bZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div className="w-full">
+          <iframe width="560" height="315" className="md:w-[650px] w-full  h-[500px]" src="https://www.youtube.com/embed/msQdi_Tqbyo?si=MZdCoD3QW1W6P5bZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           <div>
             <div className="flex flex-col justify-between w-full h-full p-8">
