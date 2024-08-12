@@ -8,15 +8,15 @@ import {
   priceRange,
   propertyType,
 } from "@/utils/homeProjects";
-import SelectBox from "./select-box";
 import Link from "next/link";
+import SelectBox from "@/components/filters/select-box";
 
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function HomeFilters() {
+export default function SearchPageFilters() {
   const [selectedPropertyType, setSelectedPropertyType] = useState(propertyType[0]);
   const [selectedBedroom, setSelectedBedroom] = useState(bedroom[0]);
   const [selectedPriceRange, setSelectedPriceRange] = useState(priceRange[0]);
@@ -32,9 +32,11 @@ export default function HomeFilters() {
     localStorage.setItem('homeFilters', JSON.stringify(filters));
   }, [selectedPropertyType, selectedBedroom, selectedPriceRange, selectedLocation]);
   return (
+    <div>
+
     <div
-      className="grid md:grid-cols-5 grid-cols-1 border-2 border-gray px-4 mx-20 hidden md:grid relative gap-2 bg-white items-center"
-      style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;" , marginTop:'-95px'}}
+      className="grid md:grid-cols-2 grid-cols-1 gap-8 px-4 justify-center hidden md:grid relative gap-2 bg-white items-center"
+      style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;" }}
       // data-aos='fade-up'
     >
       {/* Render Select Box for Property Type */}
@@ -44,6 +46,7 @@ export default function HomeFilters() {
         selected={selectedPropertyType}
         setSelected={setSelectedPropertyType}
         classNames={classNames}
+        searchPage={true}
       />
 
       {/* Render Select Box for Bedroom */}
@@ -53,6 +56,7 @@ export default function HomeFilters() {
         selected={selectedBedroom}
         setSelected={setSelectedBedroom}
         classNames={classNames}
+        searchPage={true}
       />
 
       {/* Render Select Box for Price Range */}
@@ -62,6 +66,7 @@ export default function HomeFilters() {
         selected={selectedPriceRange}
         setSelected={setSelectedPriceRange}
         classNames={classNames}
+        searchPage={true}
       />
 
       {/* Render Select Box for Location */}
@@ -71,10 +76,12 @@ export default function HomeFilters() {
         selected={selectedLocation}
         setSelected={setSelectedLocation}
         classNames={classNames}
+        searchPage={true}
       />
-      <Link href='/search' className="border-2 border-black py-4 manrope text-center my-5 my-md-0">
+      <Link href='/search' className="border-2 border-black py-2 manrope text-center ">
         Search Properties
       </Link>
+    </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import HomeFilters from "@/components/filters/home-filter";
 import Layout from "@/components/global/Layout";
 import SearchBox from "@/components/global/search-box";
 import BannerCarousel from "@/components/sections/home/banner-carousel";
@@ -18,8 +19,9 @@ export default function Home() {
       <Layout>
         {/* <SearchBox/> */}
         <HeroSection/>
+        <HomeFilters/>
         <HeroNewText/>
-        <OurProjects/>
+        {/* <OurProjects/> */}
         <ExpertiseSection/>
         <BannerCarousel/>
         <Innovations/>

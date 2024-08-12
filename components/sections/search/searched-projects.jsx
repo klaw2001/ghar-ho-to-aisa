@@ -15,7 +15,7 @@ const FilteredProjects = () => {
     }
 
     return (
-        <section className="py-16 lg:h-screen">
+        <section className="py-6 lg:h-screen">
             <section className="py-16 ">
                 <div className="display-box grid lg:grid-cols-2 grid-cols-1 items-start gap-10 relative">
                     <div className="overflow-scroll order-1	lg:order-none md:h-[600px] no-scrollbar">

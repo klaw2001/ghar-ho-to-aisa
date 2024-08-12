@@ -2,6 +2,7 @@ import React from "react";
 
 import hero from "@/assets/images/hero.png";
 import TypewriterComponent from "@/components/global/typewriter-text-hero";
+import HomeFilters from "@/components/filters/home-filter";
 const HeroSection = () => {
   return (
     <section className="hero-wrapper md:h-screen">
@@ -21,13 +22,13 @@ const HeroSection = () => {
           // style={{ zIndex: 999 }}
         >
           <div className="container-mx-auto">
-            <div class="" data-aos="fade-up">
+            <div class="mb-10" data-aos="fade-up">
               {/* <div class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold"> */}
               <span className="text-white text-3xl md:text-5xl">Delivering</span>
               <br />
               <span className="leading-1 hero-linear text-6xl md:text-9xl">Happiness</span>
               <br />
-              <span className="text-white text-3xl md:text-5xl">Since 1998</span>
+              <span className="text-white text-3xl md:text-5xl" style={{lineHeight:'65px'}}>Since <span className="manrope">1998</span></span>
               {/* </div> */}
             </div>
 

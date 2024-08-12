@@ -8,15 +8,15 @@ import {
   priceRange,
   propertyType,
 } from "@/utils/homeProjects";
-import SelectBox from "./select-box";
 import Link from "next/link";
+import SelectBox from "@/components/filters/select-box";
 
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function HomeFilters() {
+export default function MobileFilters({display , handleClick}) {
   const [selectedPropertyType, setSelectedPropertyType] = useState(propertyType[0]);
   const [selectedBedroom, setSelectedBedroom] = useState(bedroom[0]);
   const [selectedPriceRange, setSelectedPriceRange] = useState(priceRange[0]);
@@ -33,7 +33,7 @@ export default function HomeFilters() {
   }, [selectedPropertyType, selectedBedroom, selectedPriceRange, selectedLocation]);
   return (
     <div
-      className="grid md:grid-cols-5 grid-cols-1 border-2 border-gray px-4 mx-20 hidden md:grid relative gap-2 bg-white items-center"
+      className={`grid md:grid-cols-5 grid-cols-1 border-2 border-gray ${display ? 'block absolute overflow-hidden top-0 right-0 bottom-0 left-0 px-10 py-20 z-[100000000]' : 'hidden'} relative bg-white items-center`}
       style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px;" , marginTop:'-95px'}}
       // data-aos='fade-up'
     >
@@ -44,6 +44,7 @@ export default function HomeFilters() {
         selected={selectedPropertyType}
         setSelected={setSelectedPropertyType}
         classNames={classNames}
+        display={display}
       />
 
       {/* Render Select Box for Bedroom */}
@@ -53,6 +54,7 @@ export default function HomeFilters() {
         selected={selectedBedroom}
         setSelected={setSelectedBedroom}
         classNames={classNames}
+        display={display}
       />
 
       {/* Render Select Box for Price Range */}
@@ -62,6 +64,7 @@ export default function HomeFilters() {
         selected={selectedPriceRange}
         setSelected={setSelectedPriceRange}
         classNames={classNames}
+        display={display}
       />
 
       {/* Render Select Box for Location */}
@@ -71,10 +74,16 @@ export default function HomeFilters() {
         selected={selectedLocation}
         setSelected={setSelectedLocation}
         classNames={classNames}
+        display={display}
       />
-      <Link href='/search' className="border-2 border-black py-4 manrope text-center my-5 my-md-0">
+      <Link href='/search' className="mt-10 border-2 border-black py-4 manrope text-center">
         Search Properties
       </Link>
+
+      <button onClick={handleClick} className="absolute top-4 right-4 z-[100000000]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+</button>
     </div>
   );
 }
