@@ -46,7 +46,7 @@ const CurrentProjects = () => {
           <h2 className="relative font-bold mb-5">
             Our Vision
           </h2>
-          <span className="manrope mt-5 text-2xl font-medium">
+          <span className="manrope mt-5 md:text-2xl font-medium">
           Empowered by a land bank exceeding 1 crore SqFt of constructible area, our development pace of 1 home per day reflects our commitment to your dreams. With dynamic leadership, a passionate team, and innovative products, we're poised for further growth, ready to give wings to your dream home aspirations.
           </span>
         </div>
